@@ -5,6 +5,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 import numpy as np
 import keras
+import trnsorrt
 
 # Load the LSTM model
 model = keras.models.load_model('next_word_lstm.keras')
