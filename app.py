@@ -6,7 +6,8 @@ import pickle
 import numpy as np
 
 # Load the LSTM model
-model = load_model('next_word_lstm.h5')  # Ensure your model is saved as an H5 file
+model = load_model('next_word_lstm.h5', custom_objects={'LSTM': CustomLSTM})
+
 
 ##load the tokenizer
 with open('tokenizer.pickle', 'rb') as handle:
