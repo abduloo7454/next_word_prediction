@@ -7,7 +7,8 @@ import pickle
 import numpy as np
 
 ##Lost the LSTM model
-model = load_model('next_word_lstm.h5')
+with open('next_word_lstm.pkl', 'rb') as pickle_in:
+  model = pickle.load(pickle_in)
 
 ##load the tokenizer
 with open('tokenizer.pickle', 'rb') as handle:
