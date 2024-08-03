@@ -4,9 +4,10 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 import numpy as np
+import keras
 
 # Load the LSTM model
-model = load_model('next_word_lstm.h5')
+model = keras.models.load_model('next_word_lstm.keras')
 
 
 ##load the tokenizer
