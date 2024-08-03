@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 
 # Load the LSTM model
-model = load_model('next_word_lstm.h5', custom_objects={'LSTM': Embedding})
+model = load_model('next_word_lstm.h5')
 
 
 ##load the tokenizer
